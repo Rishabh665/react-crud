@@ -2,9 +2,9 @@ import React, { useState } from "react";
 // import "/src/App.css";
 
 function TodoInput(props) {
-  const [inputText, setInputText] = useState("");
+  const [inputText, setInputText] = useState("");  // state create ki input receive karne ke liye
   const handleInputText = (e) => {
-    setInputText(e.target.value);
+    setInputText(e.target.value);                 // ek call back function jo ki onChange par input value ko inputText me dalega
   };
   return (
     <div className="todoInput-container">
@@ -16,9 +16,9 @@ function TodoInput(props) {
         onChange={handleInputText}
       />
       <button
-        className="add-bnt"
+        className="add-btn"
         onClick={() => {
-          props.addList({ inputText });
+          props.addList(inputText );   // pass string directly --> inputText, instead of object{inputText} ....
           setInputText("");
         }}
       >

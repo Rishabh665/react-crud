@@ -34,8 +34,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100%;
+  /* width: 100%; */
 }
+
 
 .center-container {
   height: 500px;
@@ -96,7 +97,7 @@ body {
 
 .list-item {
   list-style-type: none;
-  /* background-color: #596e8b; */
+  background-color: #596e8b;
   border: 2px solid rgb(161, 158, 158);
   color: white;
   padding: 3px;
